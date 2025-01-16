@@ -1,3 +1,4 @@
+import fluid, { extract } from 'fluid-tailwind'
 const colors = require("tailwindcss/colors");
 
 const {
@@ -6,12 +7,14 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
+  content: {files:[
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  extract
+},
   darkMode: ["class", "class"],
   theme: {
   	extend: {
@@ -72,7 +75,7 @@ export default {
   		}
   	}
   },
-  plugins: [addVariablesForColors, require("tailwindcss-animate")],
+  plugins: [addVariablesForColors, require("tailwindcss-animate"),fluid],
 };
 
 
