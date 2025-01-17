@@ -58,7 +58,7 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col justify-center gap-6">
-          <h1 className="~text-[22px]/[32px] lg:text-[40px] 2xl:text-[50px] font-semibold text-left  leading-tight">
+          <h1 className="text-[22px] lg:text-[40px] xl:text-[64px] font-semibold text-left  leading-tight">
             Where Tech <br /> Meets Creativity.
           </h1>
           <p className="text-[16px] text-base-400 md:max-w-72 text-left leading-tight">
