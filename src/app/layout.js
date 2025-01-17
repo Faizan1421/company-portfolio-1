@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  my-[43px] mx-6 lg:mx-[80px] 2xl:mx-[136px] flex flex-col gap-20 md:gap-32 `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  my-[43px] mx-6 lg:mx-[80px] 2xl:mx-[136px] flex flex-col gap-20 md:gap-[114px] `}
       >
         {children}
 

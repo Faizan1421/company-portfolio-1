@@ -41,14 +41,14 @@ const Hero = () => {
 
         {/* Hero Image Section */}
         <div className="flex justify-center  relative ">
-          <div className="~h-[250px]/[400px] ~w-[250px]/[400px] bg-white">
-          <Image  src="https://placehold.co/400" alt="hero-img" width={400} height={400}/>
+          <div className="~h-[250px]/[488px] ~w-[250px]/[499px] bg-white">
+          <Image  src="https://placehold.co/400" alt="hero-img" width={400} height={400} className="w-full h-full object-cover"/> 
           </div>
           <BackgroundEffects/>
         </div>
       </div>
       {/* Hero Content Section */}
-      <div className="flex flex-col justify-start xl:ml-20   gap-8 w-full">
+      <div className="flex flex-col justify-start items-start ml-0  gap-8 w-full ">
         <div className="flex justify-center items-center w-fit">
           {/* Opacity-button */}
           <Button
@@ -58,10 +58,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col justify-center gap-6">
-          <h1 className="~text-[22px]/[32px] lg:text-[40px] 2xl:text-[50px] font-semibold text-left">
+          <h1 className="~text-[22px]/[32px] lg:text-[40px] 2xl:text-[50px] font-semibold text-left  leading-tight">
             Where Tech <br /> Meets Creativity.
           </h1>
-          <p className="text-[16px] text-base-400 md:max-w-72 text-left">
+          <p className="text-[16px] text-base-400 md:max-w-72 text-left leading-tight">
             Our platform breaks down the complexities, making it easy for anyone
             to buy, sell, and exchange crypto efficiently.
           </p>

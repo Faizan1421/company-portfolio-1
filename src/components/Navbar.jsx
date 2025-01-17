@@ -40,7 +40,7 @@ const Navbar = () => {
       </ul>
       <div className="flex items-center gap-4 w-full  md:w-[50%] justify-between">
         {/* Logo */}
-        <h1 className="text-primary-600 text-lg font-bold  md:-translate-x-16">
+        <h1 className="text-primary-600 text-lg font-bold  md:-translate-x-16 cursor-pointer hover:text-primary-500  hover:scale-105">
           Cognitify
         </h1>
         {/* Auth Buttons */}

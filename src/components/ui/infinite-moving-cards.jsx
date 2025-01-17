@@ -2,6 +2,8 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import Button from "../Button";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -63,7 +65,7 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex min-w-full shrink-0 gap-4  w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}>
@@ -74,26 +76,25 @@ export const InfiniteMovingCards = ({
               background:
                 "bg-primary-600",
             }}
-            key={item.name}>
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
-              <span
-                className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.name}
-                  </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span>
-                </span>
+            key={idx}>
+           <div className="flex flex-col gap-4 ~h-[200px]/[364px] w-full md:w-[400px]">
+            {/* btn title */}
+            <div className="flex items-start justify-between  w-full h-[40%] mt-4 ">
+              <Button text={item.btnTitle} className="text-primary-600 font-normal  bg-opacity-30" />
+            </div>
+            {/* content */}
+            <div className="flex  justify-between items-center  gap-4 w-full h-[60%] ">
+              <div className="w-[50%] h-[50%] flex  items-center ">
+              <button className="text-white  p-3 rounded-full bg-primary-600 font-semibold w-[40px] h-[40px] flex justify-center items-center"> 
+                <Image src={item.iconUrl} alt="icon" width={40} height={40} />
+              </button>
               </div>
-            </blockquote>
+              <div className=" h-[50%] flex items-center ">
+              <h1 className="~text-[20px]/[32px] max-w-[222px]">{item.title}</h1>
+
+              </div>
+            </div>
+           </div>
           </li>
         ))}
       </ul>

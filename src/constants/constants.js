@@ -1,3 +1,5 @@
+import { InnovationIcon,TechnologyIcon, DesignIcon } from "../../public";
+
 export const navMenu = [
     {
         title: "Home",
@@ -16,6 +18,28 @@ export const navMenu = [
         url: "#contact"
     },
 ]
+
+
+export const HeroBelowCardData = [
+    {
+      btnTitle:"Innovation",
+      iconUrl: InnovationIcon,
+      title: "Innovation Shaped by Design",
+    },
+    {
+      btnTitle:"Design",
+      iconUrl: DesignIcon,
+      title: "Crafting Tomorrow’s Tech",
+    },
+    {
+      btnTitle: "Technology",
+      iconUrl: TechnologyIcon,
+      title: "Functionality Meets Aesthetic",
+    },
+   
+  ];
+  
+
  
 // Change hover shadow color from here
 const createRgbaColor = (r, g, b, a) => `rgba(${r}, ${g}, ${b}, ${a})`;
