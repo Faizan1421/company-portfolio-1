@@ -7,7 +7,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <div 
-    
+    id="home"
     className="flex    flex-col-reverse gap-8 md:flex-row justify-between items-center ">
       {/* menu items */}
       <ul className="flex w-full font-bold md:w-[50%] items-center justify-center gap-8 md:justify-normal md:gap-4  lg:gap-6 xl:gap-10  ">

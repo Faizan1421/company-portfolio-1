@@ -2,9 +2,9 @@ import { Percent, Plus , MoveRight} from "lucide-react";
 import Button from "./Button";
 import BackgroundEffects from "./BackgroundEffects";
 import Image from "next/image";
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <div className="w-auto gap-10   flex flex-col md:flex-row items-center justify-between 2xl:justify-center relative">
+    <div  className="w-auto gap-10   flex flex-col md:flex-row items-center justify-between 2xl:justify-center relative">
       {/* background effect */}
       <BackgroundEffects/>
       {/* Insights section */}
@@ -77,4 +77,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

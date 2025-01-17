@@ -3,7 +3,7 @@ import React from 'react'
 import Button from './Button'
 import BackgroundEffects from './BackgroundEffects'
 
-const AiSection = () => {
+const TechSectionChildFirst = () => {
   return (
     <div className='grid grid-cols-1 xl:grid-cols-2  gap-4 min-h-[353px] relative '>
          <BackgroundEffects className="-top-[100px] -right-[100px]"/>
@@ -32,4 +32,4 @@ const AiSection = () => {
   )
 }
 
-export default AiSection
+export default TechSectionChildFirst
