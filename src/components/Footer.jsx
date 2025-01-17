@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a0a0f] text-gray-300  ">
+    <footer className="  ">
       {/* Questions Section with Logo */}
       <div className="max-w-7xl mx-auto mb-8 md:mb-16">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 md:mb-8">
