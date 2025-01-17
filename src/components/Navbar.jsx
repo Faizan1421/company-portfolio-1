@@ -3,6 +3,7 @@
 import { navMenu, rgbaColor } from "@/constants/constants";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Button from "./Button";
 const Navbar = () => {
   return (
     <div 
@@ -44,42 +45,8 @@ const Navbar = () => {
         </h1>
         {/* Auth Buttons */}
         <div className="flex gap-4  ">
-          <motion.button
-            whileHover={{
-              scale: 1.1,
-              backgroundColor: "primary-600",
-              boxShadow: `0px 10px 15px ${rgbaColor}`,
-            }}
-            whileTap={{
-              scale: 0.95,
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 20,
-            }}
-            className="border-2 border-primary-600 text-white px-4 py-2 rounded-xl font-semibold"
-          >
-            Sign In
-          </motion.button>
-          <motion.button
-            whileHover={{
-              scale: 1.1,
-              backgroundColor: "primary-600",
-              boxShadow: `0px 10px 15px ${rgbaColor}`,
-            }}
-            whileTap={{
-              scale: 0.95,
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 20,
-            }}
-            className="bg-primary-600 text-white px-4 py-2 rounded-xl  font-semibold"
-          >
-            Register Here
-          </motion.button>
+          <Button text="Sign In" outline className="rounded-xl" />
+          <Button text="Register Here" filled className="rounded-xl" />
         </div>
       </div>
     </div>
