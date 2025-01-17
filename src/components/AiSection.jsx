@@ -10,7 +10,7 @@ const AiSection = () => {
         {/* left section */}
          <div className='flex w-full '>
          <div className='w-[50%] h-full  flex justify-center sm:justify-start items-start'>
-            <Image src="/ai.svg" alt="Ai" width={240} height={340} className='~w-[110px]/[240px] ~h-[200px]/[340px]' />
+            <Image src="/ailogo.svg" alt="Ai" width={240} height={340} className='~w-[110px]/[240px] ~h-[200px]/[340px]' />
          </div>
          <div className='w-[50%] h-full  flex flex-col justify-center gap-4 items-start  sm:items-center md:items-start'>
             <Button text="Tech" className="text-primary-600 font-normal  bg-opacity-30"/>
