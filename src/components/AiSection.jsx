@@ -20,7 +20,7 @@ const AiSection = () => {
          {/* Right Section */}
          <div className='flex flex-col sm:flex-row gap-4 sm:gap-0  w-full items-center ' >
             <div  className=''>
-                <Image src="https://placehold.co/400" alt='Ai-Image' width={240} height={340} className='h-full min-w-[341px] object-cover' />
+                <Image priority src="https://placehold.co/400" alt='Ai-Image' width={240} height={340} className='h-full min-w-[341px] object-cover' />
                 
             </div>
             <div className='flex flex-col justify-center items-center  xl:items-end gap-4 w-full '>

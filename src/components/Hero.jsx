@@ -42,7 +42,7 @@ const Hero = () => {
         {/* Hero Image Section */}
         <div className="flex justify-center  relative ">
           <div className="~h-[250px]/[488px] ~w-[250px]/[499px] bg-white">
-          <Image  src="https://placehold.co/400" alt="hero-img" width={400} height={400} className="w-full h-full object-cover"/> 
+          <Image priority  src="https://placehold.co/400" alt="hero-img" width={400} height={400} className="w-full h-full object-cover"/> 
           </div>
           <BackgroundEffects/>
         </div>
